@@ -4,60 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> 
-        #borderimg { 
-          border: 10px solid transparent;
-          padding: 15px;
-          border-image: url(border.png) 30 round;
-        }
-        #borderimg { 
-          border: 10px solid transparent;
-          padding: 15px;
-          border-image: url(border.png) 30 stretch;
-        }
-        #borderimg1 {
-          border: 10px solid transparent;
-          padding: 15px;
-          border-image: url(border.png) 50 round;
-        }
+    <style>
+     :root {
+        --blue: #6495ed;
+        --white: #faf0e6; 
+      }
+      
+      body {
+        background-color: var(--blue);
+      }
+      
+      h2 {
+        border-bottom: 2px solid var(--blue);
+      }
+      
+      .container {
+        color: var(--blue);
+        background-color: var(--white);
+        padding: 15px;
+      }
+      
+      button {
+        background-color: var(--white);
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        padding: 5px;
+      }
+            :root {
+              --blue: #1e90ff;
+              --white: #ffffff; 
+            }
 
-        #borderimg2 {
-          border: 10px solid transparent;
-          padding: 15px;
-          border-image: url(border.png) 20% round;
-        }
+            body {
+              background-color: var(--blue);
+            }
 
-        #borderimg3 {
-          border: 10px solid transparent;
-          padding: 15px;
-          border-image: url(border.png) 30% round;
-        }
+            h2 {
+              border-bottom: 2px solid var(--blue);
+            }
+
+            .container {
+              color: var(--blue);
+              background-color: var(--white);
+              padding: 15px;
+            }
+
+            button {
+              background-color: var(--white);
+              color: var(--blue);
+              border: 1px solid var(--blue);
+              padding: 5px;
+            }
+            body {
+              background-color: #1e90ff;
+            }
+
+            h2 {
+              border-bottom: 2px solid #1e90ff;
+            }
+
+            .container {
+              color: #1e90ff;
+              background-color: #ffffff;
+              padding: 15px;
+            }
+
+            button {
+              background-color: #ffffff;
+              color: #1e90ff;
+              border: 1px solid #1e90ff;
+              padding: 5px;
+            }
         </style>
-    <title>CSS </title>
+    <title>CSS VARIABLES</title>
 </head>
 <body>
-    <h1>The border-image Property</h1>
+    <h1> <strong> CSS Variables </strong> </h1>
+    <h1>The Traditional Way</h1>
 
-    <p>Here, the middle sections of the image are repeated to create the border:</p>
-    <p id="borderimg">border-image: url(border.png) 30 round;</p>
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div>
 
-    <p>Here is the original image:</p><img src="border.png">
-    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+    <h1>Using the var() Function</h1>
 
-    <h1>The border-image Property</h1>
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div> 
+    <h1>Using the var() Function</h1>
 
-    <p>Here, the middle sections of the image are stretched to create the border:</p>
-    <p id="borderimg">border-image: url(border.png) 30 stretch;</p>
-
-    <p>Here is the original image:</p><img src="border.png">
-    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
-
-    <h1>The border-image Property</h1>
-
-    <p id="borderimg1">border-image: url(border.png) 50 round;</p>
-    <p id="borderimg2">border-image: url(border.png) 20% round;</p>
-    <p id="borderimg3">border-image: url(border.png) 30% round;</p>
-
-    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div>
 </body>
 </html>
